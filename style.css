@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* header start  */
+header {
+  width: 100%;
+  background-color: #270082;
+  padding: 13px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 {
+  color: white;
+  font-size: 45px;
+}
+
+nav .links {
+  display: flex;
+  gap: 23px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease-in;
+}
+
+.links a:hover {
+  border-bottom: 1px solid white;
+  transition: 0.2s ease-in;
+}
+
+nav #menu {
+  display: none;
+}
+
+nav #close {
+  display: none;
+}
+/* header end  */
+
+/* main start */
+main {
+  width: 100%;
+  min-width: 800px;
+  min-height: 100vh;
+  background-image: url(./images/hero_image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: red;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 22px;
+  padding: 9px;
+  text-align: center;
+}
+
+.main-container h2 {
+  font-size: 75px;
+  color: white;
+}
+
+.main-container h3 {
+  font-size: 25px;
+  color: white;
+  min-width: 100%;
+}
+
+.main-container p {
+  font-size: 22px;
+  color: white;
+  font-weight: 250;
+  width: 100%;
+}
+/* main ends */
+
+/* music section start */
+
+#music-section {
+  width: 100%;
+  min-width: 800px;
+  background-color: #281154;
+  padding: 10px 0;
+}
+
+.music-container {
+  width: 90%;
+  padding: 15px 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.music-container h4 {
+  font-size: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.music-container p {
+  font-size: 23px;
+  color: white;
+  margin: 35px 0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.music-container button {
+  font-size: 23px;
+  padding: 8px 10px;
+  color: white;
+  background-color: rgba(255, 166, 0, 0.5);
+  font-weight: 250;
+  border: none;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.music-container button:hover {
+  cursor: pointer;
+  filter: opacity(0.7);
+}
+
+.music-container .second-p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 29px;
+  font-weight: 300;
+}
+
+.music-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+
+/* music section end */
+
+/* about music section start */
+#about-music {
+  width: 100%;
+  min-width: 800px;
+  background-color: #fff;
+  margin: 400px 0 0 0;
+}
+
+.about-music-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.about-music-container h3 {
+  font-size: 35px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about-music-container p {
+  font-size: 22px;
+  color: black;
+  margin: 20px 0 29px 0;
+}
+
+.about-music-container button {
+  font-size: 22px;
+  padding: 8px 10px;
+  color: white;
+  background-color: #2f0c80;
+  font-weight: 250;
+  border: none;
+  transition: 0.3s ease-in-out;
+  margin: 40px;
+}
+
+.about-music-container button:hover {
+  cursor: pointer;
+  filter: opacity(0.7);
+}
+
+.about-music-container img {
+  width: 100%;
+  max-width: 760px;
+  object-fit: cover;
+  animation: image 3s infinite ease-in-out;
+}
+
+@keyframes image {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-20px); /* Midway position (upward) */
+  }
+  100% {
+    transform: translateY(0); /* End position (back to original) */
+  }
+}
+
+/* about music section end */
+#video-section {
+  width: 100%;
+  min-width: 800px;
+  height: 100vh;
+  background-image: url(./images/video.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.video-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.video-container h4 {
+  font-size: 38px;
+  color: white;
+  font-weight: 600;
+}
+
+.video-container p {
+  font-size: 25px;
+  color: white;
+  margin: 25px 0;
+  font-weight: 200;
+  word-spacing: 1px;
+}
+
+/* video section end  */
+
+/* gift section start  */
+#gift-section {
+  width: 100%;
+  min-width: 800px;
+  background-color: #fff;
+  padding: 45px 10px;
+}
+
+#gift-section .gift-container {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.gift-container img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+.gift-conatainer .gift-content {
+  padding: 5px;
+}
+
+.gift-content h3 {
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.gift-content p {
+  font-size: 19px;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+.gift-content #second-p {
+  font-size: 19px;
+  font-weight: 400;
+  padding: 0 0 19px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.705);
+}
+
+.gift-content button {
+  font-size: 17px;
+  padding: 8px 10px;
+  color: white;
+  background-color: #2f0c80;
+  font-weight: 250;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.gift-content button:hover {
+  cursor: pointer;
+  filter: opacity(0.7);
+}
+/* gift section end  */
+
+/* footer section start  */
+footer {
+  width: 100%;
+  min-width: 800px;
+  background-color: #1b0058;
+  padding: 10px 0 0 0;
+}
+
+.footer-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 19px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-info h3 {
+  font-size: 23px;
+  color: white;
+  padding: 9px 0 9px 0;
+  font-weight: 400;
+  margin-bottom: 12px;
+  border-bottom: 2px solid white;
+}
+
+.footer-info p {
+  font-size: 18px;
+  margin-top: 2px;
+  color: white;
+}
+
+footer .bottom {
+  width: 100%;
+  background-color: #270082;
+  text-align: center;
+  padding: 25px;
+}
+
+.bottom h5 {
+  font-size: 19px;
+  color: white;
+  font-weight: 200;
+}
+/* footer end  */
+
+/* media queries */
+@media screen and (max-width: 884px) {
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  #gift-section .gift-container {
+    flex-direction: column;
+  }
+  main,
+  #music-section,
+  #about-music,
+  #video-section,
+  #gift-section,
+  footer {
+    min-width: 100%;
+    padding: 10px 10px;
+  }
+
+  .main-container h2 {
+    font-size: 35px;
+  }
+  .main-container h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .music-container h4 {
+    font-size: 35px;
+  }
+  .music-container i {
+    font-size: 25px;
+  }
+  .music-container p {
+    font-size: 20px;
+  }
+  .about-music-container h3 {
+    font-size: 35px;
+  }
+  .about-music-container p {
+    font-size: 20px;
+  }
+  .video-container h4 {
+    font-size: 23px;
+  }
+  .video-container p {
+    font-size: 17px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav h1 {
+    font-size: 35px;
+  }
+  nav .links {
+    position: absolute;
+    top: 66px;
+    right: -100%;
+    padding: 25px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    background-color: #270082;
+    transition: right 0.3s ease-in-out;
+  }
+  nav #menu {
+    display: block;
+    font-size: 25px;
+    color: white;
+  }
+  nav #close {
+    font-size: 25px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  header {
+    padding: 10px 0;
+  }
+  nav h1 {
+    font-size: 30px;
+  }
+  main {
+    padding: 5px;
+  }
+  .main-container h3 {
+    font-weight: 0;
+    width: 100%;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
